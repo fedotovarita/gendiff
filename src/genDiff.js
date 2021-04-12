@@ -11,14 +11,15 @@ const genDiffs = (path1, path2) => {
             acc.push(`    ${key}: ${firstData[key]}`);
             return acc;
         }
-        if (!firstData[key]) {
-            acc.push(`  + ${key}: ${secondData[key]}`);
-            return acc;
-        }
-        if (!secondData[key]) {
+        if (!(secondData[key])) {
             acc.push(`  - ${key}: ${firstData[key]}`);
             return acc;
         }
+        if (!(firstData[key])) {
+            acc.push(`  + ${key}: ${secondData[key]}`);
+            return acc;
+        }
+
         acc.push(`  - ${key}: ${firstData[key]}`);
         acc.push(`  + ${key}: ${secondData[key]}`);
         return acc;
