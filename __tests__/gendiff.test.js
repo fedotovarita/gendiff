@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
 import generateDiffs from '../src/index.js';
