@@ -1,4 +1,3 @@
-import fs from 'fs';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
 import generateDiffs from '../src/index.js';
@@ -14,5 +13,5 @@ beforeAll(() => {
 });
 
 test('test1', () => {
-    expect(generateDiffs(getFixturePath('./test1.json'), getFixturePath('./test2.json'))).toBe(expected);
+  expect(generateDiffs(getFixturePath('./test1.json'), getFixturePath('./test2.json'))).toBe(expected);
 });

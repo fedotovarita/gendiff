@@ -7,4 +7,4 @@ const expected = `{
   + verbose: true
 }`;
 
-  export default expected;
+export default expected;
