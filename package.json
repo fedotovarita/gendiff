@@ -25,6 +25,7 @@
   "homepage": "https://github.com/fedotovarita/frontend-project-lvl2#readme",
   "dependencies": {
     "commander": "^7.2.0",
+    "js-yaml": "^3.14.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
