@@ -3,7 +3,7 @@
 
 ### CodeClimat status:
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/defotovarita/frontend-project-lvl2/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/fedotovarita/frontend-project-lvl2/test_coverage)
 
 ### GitHub Actions status:
 [![Actions Status](https://github.com/fedotovarita/frontend-project-lvl2/workflows/GitHub%20Actions/badge.svg)](https://github.com/fedotovarita/frontend-project-lvl2/actions)
