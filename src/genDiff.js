@@ -1,30 +1,28 @@
 import _ from 'lodash';
-import parseData from './parsers.js';
 
-const genDiffs = (file1, file2) => {
-  const firstData = parseData(file1);
-  const secondData = parseData(file2);
-
-  const keys = _.uniq([...Object.keys(firstData), ...Object.keys(secondData)]).sort();
-
-  const result = keys.reduce((acc, key) => {
-    if (firstData[key] === secondData[key]) {
-      acc.push(`    ${key}: ${firstData[key]}`);
-      return acc;
+const genDiffs = (obj1, obj2) => {
+  const keys = _.uniq([...Object.keys(obj1), ...Object.keys(obj2)]);
+  const sortedKeys = _.sortBy(keys);
+  const result = sortedKeys.map((key) => {
+    if (!_.has(obj1, key) && _.has(obj2, key)) {
+      return { status: 'added', key, value: obj2[key] };
     }
-    if (!(secondData[key])) {
-      acc.push(`  - ${key}: ${firstData[key]}`);
-      return acc;
+    if (_.has(obj1, key) && !_.has(obj2, key)) {
+      return { status: 'deleted', key, value: obj1[key] };
     }
-    if (!(firstData[key])) {
-      acc.push(`  + ${key}: ${secondData[key]}`);
-      return acc;
+    if (_.isPlainObject(obj1[key]) && _.isPlainObject(obj2[key])) {
+      const children = genDiffs(obj1[key], obj2[key]);
+      return {
+        status: 'nested', key, value: obj1[key], children
+      };
     }
-
-    acc.push(`  - ${key}: ${firstData[key]}`);
-    acc.push(`  + ${key}: ${secondData[key]}`);
-    return acc;
-  }, []);
+    if (obj1[key] !== obj2[key]) {
+      return {
+        status: 'updated', key, value: obj2[key], oldValue: obj1[key]
+      };
+    }
+    return { status: 'unchanged', key, value: obj1[key] };
+  });
   return result;
 };
 export default genDiffs;

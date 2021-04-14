@@ -1,9 +1,7 @@
 import yaml from 'js-yaml';
 import path from 'path';
-import fs from 'fs';
 
 const parseData = (filepath) => {
-  const data = fs.readFileSync(path.resolve(process.cwd(), filepath));
   let parse;
   if (path.extname(filepath) === '.json') {
     parse = JSON.parse;
@@ -12,6 +10,6 @@ const parseData = (filepath) => {
   } else if (path.extname(filepath) === '.yaml') {
     parse = yaml.load;
   }
-  return parse(data);
+  return parse;
 };
 export default parseData;
