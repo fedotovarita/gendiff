@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "npx jest",
-    "build": "npm run build"
+    "test": "npx jest"
   },
   "bin": {
     "gendiff": "bin/gendiff.js"

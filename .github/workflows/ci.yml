@@ -42,5 +42,6 @@ jobs:
         # Add Code Climate secret key
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMAT_SECRET }}
+        with:
           coverageCommand: make test-coverage
           debug: true
