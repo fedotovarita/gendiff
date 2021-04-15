@@ -1,5 +1,5 @@
 import genDiffs from './genDiff.js';
-/* temporary */import flatRender from '../formatters/stylish.js';
+import stylish from '../formatters/stylish.js';
 import parseData from './parsers.js';
 import path from 'path';
 import fs from 'fs';
@@ -17,7 +17,7 @@ const generateDiffs = (path1, path2, format = 'stylish') => {
   const object1 = readyToRender(path1);
   const object2 = readyToRender(path2);
   const comapareObjects = genDiffs(object1, object2);
-  return flatRender(comapareObjects, format);
+  return stylish(comapareObjects, format);
 };
 
 export default generateDiffs;
