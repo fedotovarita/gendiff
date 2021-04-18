@@ -13,7 +13,7 @@ const readyToRender = (filepath) => {
   return getExtname(openedFile);
 };
 
-const generateDiffs = (path1, path2, formatName) => {
+const generateDiffs = (path1, path2, formatName = 'stylish') => {
   const object1 = readyToRender(path1);
   const object2 = readyToRender(path2);
   const comapareObjects = genDiffs(object1, object2, formatName);
