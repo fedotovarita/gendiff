@@ -11,6 +11,9 @@
 ###  Example of usage with nested .json and .yml files in two different formats:
 <a href="https://asciinema.org/a/ue6NEi6G6Vi2GKsXvZ7rQrms1" target="_blank"><img src="https://asciinema.org/a/ue6NEi6G6Vi2GKsXvZ7rQrms1.svg" /></a>
 
+### Example of usage with nested .json and .yml files in json format:
+<a href="https://asciinema.org/a/CEnEVCbxDahB8Zu50appVJZ6r" target="_blank"><img src="https://asciinema.org/a/CEnEVCbxDahB8Zu50appVJZ6r.svg" /></a>
+
 ### Example of usage with nested .json and .yml files:
 <a href="https://asciinema.org/a/1CfYSI68SUw33dazrZvAZOUPv" target="_blank"><img src="https://asciinema.org/a/1CfYSI68SUw33dazrZvAZOUPv.svg" /></a>
 
