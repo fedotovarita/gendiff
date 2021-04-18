@@ -1,5 +1,2 @@
-const json = (tree) => {
-  const mapping = tree.flatMap((node) => JSON.stringify(node));
-  return `[${mapping.join('')}]`;
-};
+const json = (tree) => JSON.stringify(tree);
 export default json;
