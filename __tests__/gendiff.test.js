@@ -13,7 +13,7 @@ const expectedStylish = readFile('expected.txt');
 const expectedPlain = readFile('expectedPlain.txt');
 const expectedJson = readFile('expectedJson.txt');
 
-test.each(['json', 'yml'])('%s test', (format) => {
+test.each(['json', 'yml'])('%s test', (format = 'stylish') => {
   const file1 = getFixturePath(`data1.${format}`);
   const file2 = getFixturePath(`data2.${format}`);
   expect(generateDiffs(file1, file2, 'stylish')).toEqual(expectedStylish);
