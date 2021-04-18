@@ -1,25 +1,22 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/fedotovarita/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/fedotovarita/frontend-project-lvl2/actions)
+# Вычислитель отличий
+Программа, определяющая разницу между двумя структурами данных. 
 
-### CodeClimat status:
+## Возможности утилиты:
+
+* Поддержка разных входных форматов: yaml, json
+* Генерация отчета в виде plain text, stylish и json
+
+## Установка:
+
+    git clone git@github.com:fedotovarita/gendiff.git
+    cd gendiff
+    make
+    npm link
+
+###  Пример использования:
+<a href="https://asciinema.org/a/hnmPlXA51qSlcP55h8jl9fDyA" target="_blank"><img src="https://asciinema.org/a/hnmPlXA51qSlcP55h8jl9fDyA.svg" /></a>
+
+[![Actions Status](https://github.com/fedotovarita/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/fedotovarita/frontend-project-lvl2/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/fedotovarita/frontend-project-lvl2/test_coverage)
-
-### GitHub Actions status:
 [![Actions Status](https://github.com/fedotovarita/frontend-project-lvl2/workflows/GitHub%20Actions/badge.svg)](https://github.com/fedotovarita/frontend-project-lvl2/actions)
-
-###  Example of usage with nested .json and .yml files in two different formats:
-<a href="https://asciinema.org/a/ue6NEi6G6Vi2GKsXvZ7rQrms1" target="_blank"><img src="https://asciinema.org/a/ue6NEi6G6Vi2GKsXvZ7rQrms1.svg" /></a>
-
-### Example of usage with nested .json and .yml files in json format:
-<a href="https://asciinema.org/a/CEnEVCbxDahB8Zu50appVJZ6r" target="_blank"><img src="https://asciinema.org/a/CEnEVCbxDahB8Zu50appVJZ6r.svg" /></a>
-
-### Example of usage with nested .json and .yml files:
-<a href="https://asciinema.org/a/1CfYSI68SUw33dazrZvAZOUPv" target="_blank"><img src="https://asciinema.org/a/1CfYSI68SUw33dazrZvAZOUPv.svg" /></a>
-
-### Example of usage with flat .json files:
-<a href="https://asciinema.org/a/AUzPcMMAYMFUE2VBbvLQ89a7h" target="_blank"><img src="https://asciinema.org/a/AUzPcMMAYMFUE2VBbvLQ89a7h.svg" /></a>
-
-### Example of usage with flat .json and .yml files:
-<a href="https://asciinema.org/a/Vdr0ksMuBtxCkLxC13taqdnl0" target="_blank"><img src="https://asciinema.org/a/Vdr0ksMuBtxCkLxC13taqdnl0.svg" /></a>
-
