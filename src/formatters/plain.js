@@ -13,11 +13,11 @@ const renderValue = (obj) => {
 const getFullPath = (acc, prop) => [...acc, prop].join('.');
 
 const render = {
-  added: (element, iter, path) => `Property '${ getFullPath(path, element.key) }' was added with value: ${ renderValue(element.value) }`,
-  deleted: (element, iter, path) => `Property '${ getFullPath(path, element.key) }' was removed`,
-  updated: (element, iter, path) => `Property '${ getFullPath(path, element.key) }' was updated. From ${ renderValue(element.oldValue) } to ${ renderValue(element.value) }`,
+  added: (element, iter, path) => `Property '${getFullPath(path, element.key)}' was added with value: ${renderValue(element.value)}`,
+  deleted: (element, iter, path) => `Property '${getFullPath(path, element.key)}' was removed`,
+  updated: (element, iter, path) => `Property '${getFullPath(path, element.key)}' was updated. From ${renderValue(element.oldValue)} to ${renderValue(element.value)}`,
   unchanged: () => [],
-  nested: (element, iter, path) => iter(element.children, [...path, element.key])
+  nested: (element, iter, path) => iter(element.children, [...path, element.key]),
 };
 
 const plain = (tree) => {

@@ -7,7 +7,7 @@ const genDiffs = (obj1, obj2) => {
     if (_.isPlainObject(obj1[key]) && _.isPlainObject(obj2[key])) {
       const children = genDiffs(obj1[key], obj2[key]);
       return {
-        status: 'nested', key, value: obj1[key], children
+        status: 'nested', key, value: obj1[key], children,
       };
     }
     if (!_.has(obj1, key) && _.has(obj2, key)) {
@@ -18,7 +18,7 @@ const genDiffs = (obj1, obj2) => {
     }
     if (obj1[key] !== obj2[key]) {
       return {
-        status: 'updated', key, value: obj2[key], oldValue: obj1[key]
+        status: 'updated', key, value: obj2[key], oldValue: obj1[key],
       };
     }
     return { status: 'unchanged', key, value: obj1[key] };

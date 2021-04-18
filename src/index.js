@@ -1,8 +1,8 @@
+import path from 'path';
+import fs from 'fs';
 import genDiffs from './genDiff.js';
 import getFormat from './formatters/index.js';
 import parseData from './parsers.js';
-import path from 'path';
-import fs from 'fs';
 
 const readFile = (filepath) => fs.readFileSync(path.resolve(process.cwd(), filepath));
 const parsedFile = (filepath) => parseData(filepath);
