@@ -1,10 +1,10 @@
-# Вычислитель отличий
-Программа, определяющая разницу между двумя структурами данных. 
+# Обчислювач відмінностей
+Програма, що визначає різницю між двома структурами даних.
 
-## Возможности утилиты:
+## Можливості утиліти:
 
-* Поддержка разных входных форматов: yaml, json
-* Генерация отчета в виде plain text, stylish и json
+* Підтримка різних вхідних форматів: yaml, json
+* Генерація звіту у вигляді plain text, stylish та json
 
 ## Установка:
 
@@ -13,7 +13,7 @@
     make
     npm link
 
-###  Пример использования:
+###  Приклад використовування:
 <a href="https://asciinema.org/a/hnmPlXA51qSlcP55h8jl9fDyA" target="_blank"><img src="https://asciinema.org/a/hnmPlXA51qSlcP55h8jl9fDyA.svg" /></a>
 
 [![Actions Status](https://github.com/fedotovarita/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/fedotovarita/frontend-project-lvl2/actions)
